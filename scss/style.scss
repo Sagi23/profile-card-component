@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  background-color: hsl(185, 75%, 39%);
+  font-family: "Kumbh Sans", sans-serif;
+  width: 100%;
+  color: hsl(229, 23%, 23%);
+  background-image: url(/images/bg-pattern-top.svg),
+    url(/images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: -5% -70%, 80% 10%;
+}
+
+.container-card {
+  box-sizing: border-box;
+  display: grid;
+  width: 80%;
+  background-color: white;
+  margin: 9em auto 0;
+  border-radius: 2em;
+  position: relative;
+}
+
+.card-top-pat {
+  img {
+    width: 100%;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+  }
+}
+
+.avatar {
+  position: absolute;
+  top: 15%;
+  left: 31%;
+  border: 5px solid white;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.name {
+  margin: 5em auto 0;
+  font-weight: 700;
+  span {
+    font-weight: 500;
+    color: hsl(227, 10%, 46%);
+  }
+}
+.location {
+  text-align: center;
+  margin: 1em auto 0;
+  padding-bottom: 2em;
+  width: 100%;
+  border-bottom: 1px solid hsl(0, 0%, 59%);
+  color: hsl(227, 10%, 46%);
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2em auto 0;
+  width: 80%;
+  .num {
+    margin: 0 auto;
+    font-weight: 700;
+  }
+  .det {
+    margin: 0.5em auto 2em;
+    color: hsl(227, 10%, 46%);
+  }
+  .follow {
+    grid-row: 2/3;
+    font-size: 0.7rem;
+  }
+  .likes {
+    font-size: 0.7rem;
+    grid-row: 2/3;
+  }
+  .photos {
+    font-size: 0.7rem;
+    grid-row: 2/3;
+  }
+}
